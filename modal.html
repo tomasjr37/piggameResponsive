@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!--try to solve by bootstrap tech -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>modal</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <!--use container bootstrap    -->
+        <div class="row">
+          <!--class one row  -->
+          <div class="col-sm-6">
+            <!--row divide into 12 column divide into two section in the ordinary screen and if screen by less than 768px each column take all the width and another srction become under the first -->
+            <section class="player player--0 player--active">
+              <h2 class="name" id="name--0">Player 1</h2>
+              <p class="score" id="score--0">43</p>
+              <div class="current">
+                <p class="current-label">Current</p>
+                <p class="current-score" id="current--0">0</p>
+              </div>
+            </section>
+          </div>
+          <br />
+          <div class="col-sm-6">
+            <section class="player player--1">
+              <h2 class="name" id="name--1">Player 2</h2>
+              <p class="score" id="score--1">24</p>
+              <div class="current">
+                <p class="current-label">Current</p>
+                <p class="current-score" id="current--1">0</p>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <div class="photos">
+          <img src="dice-5.png" alt="Playing dice" class="dice" />
+          <button class="btn btn--new">🔄 New game</button>
+          <button class="btn btn--roll">🎲 Roll dice</button>
+          <button class="btn btn--hold">📥 Hold</button>
+        </div>
+      </div>
+      <!-- End of container class -->
+    </main>
+
+    <script src="script.js"></script>
+    <script src="modal.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
